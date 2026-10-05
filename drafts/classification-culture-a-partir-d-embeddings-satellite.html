@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Classification de cultures à partir d'embeddings satellites — datajitsu</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🥋</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../theme/css/style.css">
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap nav">
+    <a class="brand" href="../">datajitsu</a>
+    <nav class="links">
+      <a href="../#mon-parcours">Mon Parcours</a>
+      <a href="../#actualites">Actualités</a>
+      <a href="../#blog">Blog</a>
+      <a href="../#collaborons">Collaborons</a>
+    </nav>
+  </div>
+  <div class="bands"><span class="r"></span><span class="g"></span><span class="b"></span></div>
+</header>
+
+<main>
+
+  <section class="article-hero">
+    <div class="wrap">
+      <a class="back-link" href="../#blog">&larr; mes articles</a>
+      <div class="kicker">October 2026 · project</div>
+      <h1 class="article-title">Classification de cultures à partir d'embeddings satellites</h1>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <article class="prose">
+        <h2>Le contexte</h2>
+<p>La cartographie des cultures est possible grâce à la disponibilité des données satellites (Landsat, Sentinel, ...) et la recherche ménée autour de la télédetection. Le champ applicatif de cette technologie est large: modélisation de rendement, suivi de surface cultivée, etc.</p>
+<p>Pour classifier les types de culture, on peut exploiter leurs signaux spectraux, qui reflètent leur cycle de développement. Pour simplifier, lorsque la culture se développe, un signal dans le vert augmente jusqu'à un pic de saison pour ensuite redescendre lors du déssechement de la plante et de sa récolte. La multitude de spectres et d'indices dont on peut en décliner (autre que le sacro-saint NDVI), leur temporalité, ainsi que leur dynamique sont autant de paramètres qui permettent de différencier une type de culture à un autre. Par exemple, le colza d'hiver se développant sur une longue période, avec des couleurs marquée de part sa floraison, aura un signal distinct d'une culture de printemps tel que le maïs.</p>
+<p>La difficulté de l'exercice réside dans le pré-traitement des données, et la disponibilité de données d'observation permettant l'entrainement d'algorithme de Machine-Learning (ML) tel que des modèles de classification.</p>
+<p>La technologie récente des modèles géospatiaux fondationnels, tel que les <a href="https://arxiv.org/pdf/2507.22291">AlphaEarth Foundations</a> ou <a href="https://openaccess.thecvf.com/content/CVPR2026/papers/Feng_TESSERA_Temporal_Embeddings_of_Surface_Spectra_for_Earth_Representation_and_CVPR_2026_paper.pdf">TESSERA</a> permettent de palier à cela. Elle condense pour chaque année un très grand nombre de données dans des embeddings qui conservent, voir améliorent, le pouvoir prédictif des signaux satellitaires.</p>
+<p>Celle-ci a déjà été utilisée pour classifier les types de culture: <a href="https://doi.org/10.1016/j.jag.2026.105531">Britt W. Smith, Jessica J. Walker, Christopher E. Soulard,
+Satellite embeddings for crop type classification: a comparative examination</a>.</p>
+<p>Mais cette étude a utilisée des classes de cultures généraliste: pâturage, champ, cultures maraîchères, agrumes et cultures subtropicales, feuillus, céréales, vignes, rizières et jachère.</p>
+<h2>Qu'en est-il d'espèces culturales comme le colza ou le maïs ?</h2>
+<p>Si les embeddings condensent l'information annuel en un unique point temporel, sont-ils capables de détecter des cultures au cycle de développement court, tel que le lin et ces 100 jours de développement ?</p>
+      </article>
+    </div>
+  </section>
+
+</main>
+
+<footer class="wrap">
+  <span>© 2026 Leo Gagliardi</span>
+  <span>
+    <a href="https://www.linkedin.com/in/leogag/" aria-label="LinkedIn profile">Contact</a>
+     | 
+    <a href="../#top">Home</a>
+  </span>
+</footer>
+
+</body>
+</html>
