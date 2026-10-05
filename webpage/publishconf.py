@@ -6,7 +6,7 @@ sys.path.append(os.path.dirname(__file__))
 from pelicanconf import *
 
 # Set this to your real domain before deploying
-SITEURL = "https://example.com"
+SITEURL = "https://datajitsu.com"
 RELATIVE_URLS = False
 
 FEED_ALL_ATOM = "feeds/all.atom.xml"

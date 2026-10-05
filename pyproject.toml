@@ -5,6 +5,7 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.14"
 dependencies = [
+    "ghp-import>=2.1.0",
     "markdown>=3.11",
     "pelican[markdown]>=4.12.0",
 ]
