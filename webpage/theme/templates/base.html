@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="{{ DEFAULT_LANG }}">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>{% block title %}{{ SITENAME }} — {{ SITESUBTITLE }}{% endblock %}</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🥋</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="{{ SITEURL }}/theme/css/style.css">
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap nav">
+    <a class="brand" href="{{ SITEURL }}/">datajitsu</a>
+    <nav class="links">
+      <a href="{{ SITEURL }}/#mon-parcours">Mon Parcours</a>
+      <a href="{{ SITEURL }}/#actualites">Actualités</a>
+      <a href="{{ SITEURL }}/#blog">Blog</a>
+      <a href="{{ SITEURL }}/#collaborons">Collaborons</a>
+    </nav>
+  </div>
+  <div class="bands"><span class="r"></span><span class="g"></span><span class="b"></span></div>
+</header>
+
+<main>
+{% block content %}{% endblock %}
+</main>
+
+<footer class="wrap">
+  <span>© {{ CURRENT_YEAR }} {{ AUTHOR }}</span>
+  <span>
+    <a href="https://www.linkedin.com/in/leogag/" aria-label="LinkedIn profile">Contact</a>
+     | 
+    <a href="{{ SITEURL }}/#top">Home</a>
+  </span>
+</footer>
+
+</body>
+</html>

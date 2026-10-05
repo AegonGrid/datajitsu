@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block title %}{{ article.title }} — {{ SITENAME }}{% endblock %}
+{% block content %}
+
+  <section class="article-hero">
+    <div class="wrap">
+      <a class="back-link" href="{{ SITEURL }}/#blog">&larr; mes articles</a>
+      <div class="kicker">{{ article.locale_date }}{% if article.category %} · {{ article.category }}{% endif %}</div>
+      <h1 class="article-title">{{ article.title }}</h1>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <article class="prose">
+        {{ article.content }}
+      </article>
+    </div>
+  </section>
+
+{% endblock %}
