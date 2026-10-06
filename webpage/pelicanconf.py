@@ -3,7 +3,7 @@ from datetime import date
 AUTHOR = "Leo Gagliardi"
 SITENAME = "datajitsu"
 SITESUBTITLE = "Leo Gagliardi — Data Science"
-SITEURL = ""
+SITEURL = "https://aegongrid.github.io/datajitsu/"
 CURRENT_YEAR = date.today().year
 
 

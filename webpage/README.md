@@ -57,6 +57,12 @@ Set your real domain in `publishconf.py` (`SITEURL`), then:
 make publish
 ```
 
+Or
+```bash
+pelican content -o output -s pelicanconf.py
+ghp-import output -b gh-pages
+git push origin gh-pages
+```
 This builds `output/` with absolute URLs and Atom feeds enabled, ready to
 upload anywhere that serves static files (GitHub Pages, Netlify, S3, etc.).
 
